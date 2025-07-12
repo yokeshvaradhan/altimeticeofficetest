@@ -1,0 +1,57 @@
+.form-card {
+  padding: 10px !important; 
+  margin: 0; 
+  box-shadow: none; 
+  border-radius: 10px;
+  background-color: #e3eaf2;
+}
+
+.form-title {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  gap: 10px; 
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.cancel-button {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.review-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card {
+  padding: 10px !important; 
+  margin: 0;
+  box-shadow: none; 
+  border-radius: 10px;
+}
+
+.form-title {
+  text-align: center;
+  margin: 5px 0; 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cancel-button {
+  color: #007bff;
+  cursor: pointer;
+}

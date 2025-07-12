@@ -1,0 +1,75 @@
+{
+  "assetAllocationChart": {
+    "chartType": "pie",
+    "labels": ["Equities", "Bonds", "Real Estate", "Commodities"],
+    "datasets": [
+      {
+        "label": "Portfolio Allocation",
+        "data": [50, 30, 15, 5],
+        "backgroundColor": ["#FF8F02", "#FF3B02", "#7ACB11", "#99121D"]
+      }
+    ],
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false
+    }
+  },
+
+  "marketTrendsChart": {
+    "chartType": "line",
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    "datasets": [
+      {
+        "label": "Stock Market Index",
+        "data": [3200, 3400, 3300, 3500, 3600, 3700],
+        "borderColor": "#0072ff",
+        "backgroundColor": "rgba(0, 114, 255, 0.2)",
+        "fill": true
+      },
+      {
+        "label": "Sector Performance",
+        "data": [100, 300, 250, 450, 500, 600],
+        "borderColor": "#6a11cb",
+        "backgroundColor": "rgba(106, 17, 203, 0.2)",
+        "fill": true
+      }
+    ],
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "scales": {
+        "x": { "title": { "display": true, "text": "Months" } },
+        "y": { "title": { "display": true, "text": "Index Value" } }
+      }
+    }
+  },
+
+  "performanceMetricsChart": {
+    "chartType": "line",
+    "labels": ["Q1", "Q2", "Q3", "Q4"],
+    "datasets": [
+      {
+        "label": "Portfolio Growth",
+        "data": [105, 110, 120, 130],
+        "borderColor": "#00c6ff",
+        "backgroundColor": "rgba(0, 198, 255, 0.2)",
+        "fill": true
+      },
+      {
+        "label": "Benchmark Index",
+        "data": [100, 105, 115, 125],
+        "borderColor": "#11998e",
+        "backgroundColor": "rgba(17, 153, 142, 0.2)",
+        "fill": true
+      }
+    ],
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "scales": {
+        "x": { "title": { "display": true, "text": "Quarters" } },
+        "y": { "title": { "display": true, "text": "Portfolio Value" } }
+      }
+    }
+  }
+}

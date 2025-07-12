@@ -1,0 +1,47 @@
+<mat-toolbar color="primary" class="app-header">
+  <span class="app-title">Investment Insights</span>
+  <span class="spacer"></span>
+  <button mat-icon-button (click)="openInvestmentForm()" aria-label="Refresh Charts">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-toolbar>
+
+
+
+<div class="chart-box">
+  <div class="card">
+    <div class="card-header">Performance Metrics</div>
+    <div class="card-body">
+      <div class="chart-container">
+        <canvas *ngIf="performanceMetricsData" baseChart [data]="performanceMetricsData" [options]="performanceMetricsOptions" [type]="performanceMetricsType"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">Asset Allocation</div>
+    <div class="card-body">
+      <div class="chart-container">
+        <canvas *ngIf="assetAllocationData" baseChart [data]="assetAllocationData" [options]="assetAllocationOptions" [type]="assetAllocationType"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Market Trends</div>
+    <div class="card-body">
+      <div class="chart-container">
+        <canvas *ngIf="marketTrendsData" baseChart [data]="marketTrendsData" [options]="marketTrendsOptions" [type]="marketTrendsType"></canvas>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
